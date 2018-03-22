@@ -1,0 +1,4 @@
+services:
+#    dima_blog.example:
+#        class: Dima\BlogBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
