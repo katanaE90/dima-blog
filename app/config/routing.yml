@@ -1,3 +1,4 @@
-app:
-    resource: '@AppBundle/Controller/'
-    type: annotation
+dima_blog:
+    resource: "@DimaBlogBundle/Resources/config/routing.yml"
+    prefix:   /
+

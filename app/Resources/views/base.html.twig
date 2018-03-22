@@ -1,13 +1,126 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <title>Blog</title>
+</head>
+<body>
+<header>
+    <div class="container clear-after">
+        <div class="logo">
+
+            <i class="fas fa-home"></i> Дім-сторінка
+
+        </div>
+        <div class="search">
+            <i class="fas fa-search"></i> пошук
+        </div>
+    </div>
+</header>
+<div class="container clear-after">
+    <div class="left">
+        <h1>Діма Петренко</h1>
+        <ul>
+            <li><a href="#">Представляюсь</a> </li>
+            <li><a href="#">Пишу</a></li>
+            <li><a href="#">Був там і тут</a></li>
+            <li><a href="#">Люблю</a></li>
+            <li><a href="#">Ненавиджу</a></li>
+            <li><a href="#">Склад</a></li>
+        </ul>
+        <div class="clear-after">
+            <div class="img">
+                <img src="img/угвей.png">
+            </div>
+            <div class="text">
+                <p>Колись я навчусь</p><p>малювати не гірше</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="center">
+        <ul>
+            <li><a href="#">Написати Дімі</a> </li>
+            <li><a href="#">Заховався тут</a> </li>
+        </ul>
+        <h2>Робота</h2>
+        <ul>
+            <li><a href="#">Портфоліо</a> </li>
+            <li><a href="#">Працюю тут</a> </li>
+        </ul>
+        <h2>Бложе мій</h2>
+        <ul>
+            <li><a href="#">Telegram</a> </li>
+        </ul>
+        <h2>Рекомендую</h2>
+        <ul>
+            <li><a href="#">tema.ru</a>-Артемій Лєбєдєв </li>
+            <li><a href="#">ldwg.ru</a>-Людвіг Бистроновський </li>
+            <li><a href="#">bizikov.ru</a>-Саша Бізіков </li>
+        </ul>
+        <h2>Сонце</h2>
+        <ul>
+            <li><a href="#">Сонце місяця</a> </li>
+            <li><a href="#">Місяць місяця</a> </li>
+        </ul>
+    </div>
+    <div class="right">
+        <ul>
+            <li><a href="#">Книга "Дизайн для реального мира"</a> ru </li>
+            <li><a href="#">Цените пространство</a>ru </li>
+            <li><a href="#">Книга "Скрытые ресурсы мозга"</a>ru </li>
+            <li><a href="#">Ессе "Майбутнє мас-медіа"</a>ua </li>
+            <li><a href="#">Книга "Мартин Иден"</a>ru </li>
+            <li><a href="#">Книга "Дизайн для реального мира"</a>ru </li>
+            <li><a href="#">Цените пространство</a>ru </li>
+            <li><a href="#">Книга "Скрытые ресурсы мозга"</a>ru </li>
+            <li><a href="#">Ессе "Майбутнє мас-медіа"</a>ua </li>
+            <li><a href="#">Книга "Мартин Иден"</a>ru </li>
+            <li><a href="#">Книга "Дизайн для реального мира"</a>ru </li>
+            <li><a href="#">Цените пространство</a>ru </li>
+            <li><a href="#">Книга "Скрытые ресурсы мозга"</a>ru </li>
+            <li><a href="#">Ессе "Майбутнє мас-медіа"</a>ua </li>
+        </ul>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <p>@ 2018 Дмитро Петренко</p>
+        <a href="#">dmtr@dmtr.com.ua</a>
+    </div>
+</div>
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="wrapper">
+    <div class="container_1">
+        <input type="text" class="input" placeholder="Search">
+        <i class="fa fa-search" aria-hidden="true"></i>
+    </div>
+</div>
+
+
+
+<script>
+    $(document).ready(function(){
+
+        $(".fa-search").click(function(){
+            $(".container_1, .input").toggleClass("active");
+            $("input[type='text']").focus();
+        });
+
+    });
+</script>
+
+
+
+
+</body>
 </html>
